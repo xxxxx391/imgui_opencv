@@ -1,0 +1,10 @@
+^E:\PROJECT\OPENCV_GUI\IMGUI_OPENCV\IMGUI_OPENCV\BUILD\CMAKEFILES\DE7B1F638B4F5B8F0E8948277FDFBBB2\GENERATE.STAMP.RULE
+setlocal
+D:\Program_File\cmake\bin\cmake.exe -SE:/project/opencv_gui/imgui_opencv/imgui_opencv -BE:/project/opencv_gui/imgui_opencv/imgui_opencv/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/project/opencv_gui/imgui_opencv/imgui_opencv/build/imgui_opencv.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
